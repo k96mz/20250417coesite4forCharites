@@ -1,0 +1,18 @@
+id: ls-ferry-symbol
+layout:
+  symbol-placement: line
+  symbol-spacing: 1000
+  text-field: '{name}'
+  text-font:
+    - sans
+  text-optional: true
+  text-size: 8.66667
+  text-letter-spacing: 0.15
+minzoom: 9
+paint:
+  text-color: '#3D9CCC'
+  text-halo-color: '#D8ECF6'
+  text-halo-width: 1.33333
+source: v
+source-layer: ferry
+type: symbol

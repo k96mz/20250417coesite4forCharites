@@ -1,0 +1,33 @@
+filter:
+  - all
+  - - '=='
+    - feat_class
+    - Cemetery
+id: pt-poi-minusca-heritage-memorial
+layout:
+  icon-image: POI_Memorial
+  icon-size:
+    stops:
+      - - 15
+        - 0.8
+      - - 16
+        - 1
+  text-anchor: top
+  text-field: '{poiname}'
+  text-font:
+    - NotoSans-Regular
+  text-offset:
+    - 0
+    - 0.75
+  text-optional: true
+  text-padding: 1
+  text-size: 9.33333
+minzoom: 15
+paint:
+  icon-color: '#894444'
+  text-color: '#894444'
+  text-halo-color: '#FFFFFF'
+  text-halo-width: 1.33333
+source: v
+source-layer: poi_minusca
+type: symbol

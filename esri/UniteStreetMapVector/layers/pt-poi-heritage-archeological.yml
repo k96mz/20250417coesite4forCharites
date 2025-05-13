@@ -1,0 +1,37 @@
+filter:
+  - all
+  - - '!='
+    - ungsc_mission
+    - UNMIK
+  - - in
+    - fclass
+    - archaeological_site
+    - ruins
+id: pt-poi-heritage-archeological
+layout:
+  icon-image: POI_Archeological
+  icon-size:
+    stops:
+      - - 15
+        - 0.8
+      - - 16
+        - 1
+  text-anchor: top
+  text-field: '{name}'
+  text-font:
+    - NotoSans-Regular
+  text-offset:
+    - 0
+    - 0.75
+  text-optional: true
+  text-padding: 1
+  text-size: 9.33333
+minzoom: 15
+paint:
+  icon-color: '#894444'
+  text-color: '#894444'
+  text-halo-color: '#FFFFFF'
+  text-halo-width: 1.33333
+source: v
+source-layer: poi_heritage
+type: symbol

@@ -1,10 +1,10 @@
 require("dotenv").config();
 
 //for Server fnction
-const session = require("express-session");
-const MySQLStore = require("express-mysql-session")(session); //Added for session store in mysql
-const flash = require("connect-flash");
-const msal = require("@azure/msal-node");
+// const session = require("express-session");
+// const MySQLStore = require("express-mysql-session")(session); //Added for session store in mysql
+// const flash = require("connect-flash");
+// const msal = require("@azure/msal-node");
 var createError = require("http-errors");
 const express = require("express");
 const path = require("path");
@@ -48,7 +48,7 @@ logger.stream = {
 };
 // logger until here
 
-var authRouter = require("./routes/auth"); //before app
+// var authRouter = require("./routes/auth"); //before app
 const app = express();
 // In-memory storage of logged-in users
 // For demo purposes only, production apps should store
@@ -56,36 +56,36 @@ const app = express();
 app.locals.users = {};
 
 // MSAL config
-const msalConfig = {
-  auth: {
-    clientId: process.env.OAUTH_CLIENT_ID,
-    authority: process.env.OAUTH_AUTHORITY,
-    clientSecret: process.env.OAUTH_CLIENT_SECRET,
-    //Client credential (secret, certificate, or assertion) must not be empty when creating a confidential client.
-    //An application should at most have one credential
-  },
-  system: {
-    loggerOptions: {
-      loggerCallback(loglevel, message, containsPii) {
-        console.log(message);
-      },
-      piiLoggingEnabled: false,
-      logLevel: msal.LogLevel.Verbose,
-    },
-  },
-};
+// const msalConfig = {
+//   auth: {
+//     clientId: process.env.OAUTH_CLIENT_ID,
+//     authority: process.env.OAUTH_AUTHORITY,
+//     clientSecret: process.env.OAUTH_CLIENT_SECRET,
+//     //Client credential (secret, certificate, or assertion) must not be empty when creating a confidential client.
+//     //An application should at most have one credential
+//   },
+//   system: {
+//     loggerOptions: {
+//       loggerCallback(loglevel, message, containsPii) {
+//         console.log(message);
+//       },
+//       piiLoggingEnabled: false,
+//       logLevel: msal.LogLevel.Verbose,
+//     },
+//   },
+// };
 
 // Create msal application object
-app.locals.msalClient = new msal.ConfidentialClientApplication(msalConfig);
+// app.locals.msalClient = new msal.ConfidentialClientApplication(msalConfig);
 //(before indexRouter) until here
 
 var indexRouter = require("./routes/index");
 var mapLRouter = require("./routes/map-l"); //test 0104
 var webmapLRouter = require("./routes/webmap-l");
 var webmap3DRouter = require("./routes/webmap-3d");
-var VTRouter = require("./routes/VT"); //test 0308
+// var VTRouter = require("./routes/VT"); //test 0308
 //var VTRouter = require('./routes/VT-r') //referer test
-//var VTORouter = require('./routes/VT-open') //test 0322(only for development env.)
+var VTORouter = require("./routes/VT-open"); //test 0322(only for development env.)
 var esriIFRouter = require("./routes/esriIF"); //esri interface (tilemap, etc..)
 var rgbElevRouter = require("./routes/rgbElev");
 
@@ -104,49 +104,49 @@ app.use(session({
 */
 
 //session with mysql (from here)
-const mysqlOptions = {
-  host: "localhost",
-  port: 3306,
-  user: process.env.MYSQL_USER,
-  password: process.env.MYSQL_PASSWORD,
-  database: process.env.MYSQL_DATABASE,
-};
-const sessionStore = new MySQLStore(mysqlOptions);
-const sess = {
-  secret: process.env.OAUTH_CLIENT_SECRET,
-  cookie: { maxAge: 60000000 }, //16h40m
-  store: sessionStore,
-  resave: true, //make it true if necessary
-  saveUninitialized: true, //make it true if necessary
-};
-//sess.cookie.secure = true //for production
-app.use(session(sess));
-//session with mysql (until here)
+// const mysqlOptions = {
+//   host: "localhost",
+//   port: 3306,
+//   user: process.env.MYSQL_USER,
+//   password: process.env.MYSQL_PASSWORD,
+//   database: process.env.MYSQL_DATABASE,
+// };
+// const sessionStore = new MySQLStore(mysqlOptions);
+// const sess = {
+//   secret: process.env.OAUTH_CLIENT_SECRET,
+//   cookie: { maxAge: 60000000 }, //16h40m
+//   store: sessionStore,
+//   resave: true, //make it true if necessary
+//   saveUninitialized: true, //make it true if necessary
+// };
+// //sess.cookie.secure = true //for production
+// app.use(session(sess));
+// //session with mysql (until here)
 
-// Flash middleware
-app.use(flash());
+// // Flash middleware
+// app.use(flash());
 
-// Set up local vars for template layout
-app.use(function (req, res, next) {
-  // Read any flashed errors and save
-  // in the response locals
-  res.locals.error = req.flash("error_msg");
+// // Set up local vars for template layout
+// app.use(function (req, res, next) {
+//   // Read any flashed errors and save
+//   // in the response locals
+//   res.locals.error = req.flash("error_msg");
 
-  // Check for simple error string and
-  // convert to layout's expected format
-  var errs = req.flash("error");
-  for (var i in errs) {
-    res.locals.error.push({ message: "An error occurred", debug: errs[i] });
-  }
+//   // Check for simple error string and
+//   // convert to layout's expected format
+//   var errs = req.flash("error");
+//   for (var i in errs) {
+//     res.locals.error.push({ message: "An error occurred", debug: errs[i] });
+//   }
 
-  // Check for an authenticated user and load
-  // into response locals
-  if (req.session.userId) {
-    res.locals.user = app.locals.users[req.session.userId];
-  }
+//   // Check for an authenticated user and load
+//   // into response locals
+//   if (req.session.userId) {
+//     res.locals.user = app.locals.users[req.session.userId];
+//   }
 
-  next();
-});
+//   next();
+// });
 
 // view engine setup
 app.set("unvt/views", path.join(__dirname, "views"));
@@ -176,12 +176,12 @@ app.use(cors());
 
 app.use("/unvt", express.static("public"));
 app.use("/unvt/", indexRouter);
-app.use("/unvt/auth", authRouter); //after app.use('/', indexRouter)
+// app.use("/unvt/auth", authRouter); //after app.use('/', indexRouter)
 app.use("/unvt/map-l", mapLRouter);
 app.use("/unvt/webmap-l", webmapLRouter);
 app.use("/unvt/webmap-3d", webmap3DRouter);
-app.use("/unvt/VT", VTRouter);
-//app.use('/unvt/VT-open', VTORouter)
+// app.use("/unvt/VT", VTRouter);
+app.use("/unvt/VT-open", VTORouter);
 app.use("/unvt/rest/services/esriIF", esriIFRouter); //esri interface
 app.use("/unvt/rgb-elev", rgbElevRouter);
 
@@ -201,19 +201,19 @@ app.use(function (err, req, res, next) {
 });
 
 //for https
-spdy
-  .createServer(
-    {
-      key: fs.readFileSync(privkeyPath),
-      cert: fs.readFileSync(fullchainPath),
-    },
-    app
-  )
-  .listen(port);
+// spdy
+//   .createServer(
+//     {
+//       key: fs.readFileSync(privkeyPath),
+//       cert: fs.readFileSync(fullchainPath),
+//     },
+//     app
+//   )
+//   .listen(port);
 
 //for http
 //app.listen(port, () => {
 //    console.log(`Running at Port ${port} ...`)
-//app.listen(3000, () => {
-//console.log("running at port 3000 ...")
-//})
+app.listen(3000, () => {
+  console.log("running at port 3000 ...");
+});

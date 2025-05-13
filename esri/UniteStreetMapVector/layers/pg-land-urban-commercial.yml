@@ -1,0 +1,12 @@
+filter:
+  - any
+  - - '=='
+    - fclass
+    - commercial
+id: pg-land-urban-commercial
+maxzoom: 20
+paint:
+  fill-color: '#ECE0CF'
+source: v
+source-layer: lu_urban
+type: fill

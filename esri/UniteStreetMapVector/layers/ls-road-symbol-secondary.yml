@@ -1,0 +1,22 @@
+id: ls-road-symbol-secondary
+filter:
+  - all
+  - - in
+    - z_order
+    - 7
+layout:
+  symbol-placement: line
+  symbol-spacing: 1000
+  text-field: '{name}'
+  text-font:
+    - sans
+  text-optional: true
+  text-size: 10
+minzoom: 14
+paint:
+  text-color: '#686868'
+  text-halo-color: rgba(255,255,255,0.85)
+  text-halo-width: 1.33333
+source: v
+source-layer: road
+type: symbol

@@ -1,0 +1,43 @@
+filter:
+  - all
+  - - '=='
+    - z_order
+    - 3
+  - - has
+    - tunnel
+id: ls-road-tunnel-line-a
+layout:
+  line-cap: round
+  line-join: round
+minzoom: 6
+paint:
+  line-color:
+    stops:
+      - - 12
+        - '#CC3D61'
+      - - 13
+        - '#FFFFFF'
+  line-opacity: 0.25
+  line-width:
+    stops:
+      - - 4
+        - 0.15
+      - - 6
+        - 0.9
+      - - 8
+        - 1.2
+      - - 10
+        - 1.5
+      - - 12
+        - 2
+      - - 13
+        - 3
+      - - 15
+        - 6
+      - - 17
+        - 14
+      - - 19
+        - 32
+source: v
+source-layer: road
+type: line

@@ -1,0 +1,52 @@
+filter:
+  - all
+  - - '!='
+    - ungsc_mission
+    - UNMIK
+  - - in
+    - fclass
+    - college
+    - university
+  - - '=='
+    - status
+    - true
+id: pt-poi-services-1-college
+layout:
+  icon-image: POI_College
+  icon-size:
+    stops:
+      - - 14
+        - 0.8
+      - - 16
+        - 1
+  text-anchor: top
+  text-field: '{name}'
+  text-font:
+    - NotoSans-Regular
+  text-offset:
+    - 0
+    - 0.75
+  text-optional: true
+  text-padding: 1
+  text-size: 9.33333
+minzoom: 13
+paint:
+  icon-color: '#386090'
+  icon-opacity:
+    stops:
+      - - 13
+        - 0
+      - - 14
+        - 1
+  text-color: '#386090'
+  text-halo-color: '#FFFFFF'
+  text-halo-width: 1.33333
+  text-opacity:
+    stops:
+      - - 14
+        - 0
+      - - 15
+        - 1
+source: v
+source-layer: poi_services
+type: symbol

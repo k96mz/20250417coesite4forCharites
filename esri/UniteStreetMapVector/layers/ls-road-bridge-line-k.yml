@@ -1,0 +1,37 @@
+filter:
+  - all
+  - - in
+    - z_order
+    - 14
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+  - - has
+    - bridge
+id: ls-road-bridge-line-k
+layout:
+  line-cap: round
+  line-join: round
+minzoom: 13
+paint:
+  line-color:
+    stops:
+      - - 13
+        - '#CFCFCF'
+      - - 14
+        - '#FFFFFF'
+  line-width:
+    stops:
+      - - 13
+        - 0.66
+      - - 15
+        - 1.33
+      - - 17
+        - 4
+      - - 19
+        - 14
+source: v
+source-layer: road
+type: line

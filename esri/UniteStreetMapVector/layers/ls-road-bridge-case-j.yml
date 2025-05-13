@@ -1,0 +1,35 @@
+filter:
+  - all
+  - - in
+    - z_order
+    - 13
+  - - has
+    - bridge
+id: ls-road-bridge-case-j
+layout:
+  line-join: round
+minzoom: 11
+paint:
+  line-color:
+    stops:
+      - - 12
+        - rgba(255,255,255,0.75)
+      - - 13
+        - '#ABABAB'
+  line-width:
+    stops:
+      - - 10
+        - 0.5
+      - - 12
+        - 0.75
+      - - 13
+        - 1.5
+      - - 15
+        - 3
+      - - 17
+        - 7
+      - - 19
+        - 19
+source: v
+source-layer: road
+type: line

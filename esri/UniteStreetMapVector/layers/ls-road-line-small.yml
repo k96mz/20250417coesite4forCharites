@@ -1,0 +1,9 @@
+id: ls-road-line-small
+maxzoom: 6
+minzoom: 4
+paint:
+  line-color: '#CC7A9B'
+  line-width: 0.5
+source: v
+source-layer: road-s
+type: line

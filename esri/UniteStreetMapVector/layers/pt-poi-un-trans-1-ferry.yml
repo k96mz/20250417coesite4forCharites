@@ -1,0 +1,35 @@
+filter:
+  - all
+  - - '!in'
+    - countrycode
+    - LIB
+    - CAF
+  - - in
+    - type
+    - Ferry Terminal
+    - Port
+id: pt-poi-un-trans-1-ferry
+layout:
+  icon-allow-overlap: false
+  icon-image: POI_Ferry
+  icon-optional: false
+  icon-padding: 0
+  icon-size: 1
+  text-anchor: bottom
+  text-field: '{poiname}'
+  text-font:
+    - NotoSans-Regular
+  text-offset:
+    - 0
+    - -1
+  text-optional: true
+  text-size: 10.6667
+minzoom: 10
+paint:
+  icon-color: '#802677'
+  text-color: '#802677'
+  text-halo-color: '#FFFFFF'
+  text-halo-width: 1.33333
+source: v
+source-layer: un_poi
+type: symbol

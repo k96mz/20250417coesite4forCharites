@@ -1,0 +1,34 @@
+filter:
+  - any
+  - - '=='
+    - poptyp
+    - 1
+  - - '=='
+    - poptyp
+    - 2
+  - - all
+    - - '=='
+      - poptyp
+      - 3
+    - - '=='
+      - scl_id
+      - 10
+id: pt-place-capital-large
+layout:
+  text-allow-overlap: true
+  text-field: '{cartolb}'
+  text-font:
+    - NotoSans-Bold
+  text-optional: true
+  text-size: 12
+  text-max-width: 15
+  text-anchor: center
+maxzoom: 12
+minzoom: 7
+paint:
+  text-color: '#3E3F40'
+  text-halo-color: '#FFFFFF'
+  text-halo-width: 1.33333
+source: v
+source-layer: un_popp
+type: symbol

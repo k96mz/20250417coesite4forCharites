@@ -1,0 +1,21 @@
+filter:
+  - all
+  - - in
+    - z_order
+    - 2
+    - 3
+id: ls-railway-light-dash
+paint:
+  line-color: '#80667D'
+  line-dasharray:
+    - 0.215
+    - 3.44
+  line-width:
+    stops:
+      - - 16
+        - 1.5
+      - - 19
+        - 3
+source: v
+source-layer: railway
+type: line

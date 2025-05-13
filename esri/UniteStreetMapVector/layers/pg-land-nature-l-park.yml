@@ -1,0 +1,16 @@
+filter:
+  - any
+  - - in
+    - z_order
+    - 1
+    - 3
+    - 8
+    - 10
+    - 11
+id: pg-land-nature-l-park
+maxzoom: 20
+paint:
+  fill-color: '#BAE3BA'
+source: v
+source-layer: nature-l
+type: fill

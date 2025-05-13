@@ -1,0 +1,35 @@
+filter:
+  - any
+  - - "=="
+    - annotationclassid
+    - 3
+id: pt-lab-water-bay
+layout:
+  text-field: "{textstring}"
+  text-font:
+    - Open Sans Semibold Italic
+  text-size:
+    stops:
+      - - 1
+        - 8.5
+      - - 2
+        - 9
+      - - 3
+        - 14
+maxzoom: 10
+minzoom: 2
+paint:
+  text-color:
+    stops:
+      - - 4
+        # - '#609FBF'
+        - "#777D89"
+      - - 7
+        # - '#3D9CCC'
+        - "#777D89"
+  # text-halo-color: "#FFFFFF"
+  text-halo-color: "#000000"
+  text-halo-width: 0.4
+source: v
+source-layer: lab_water
+type: symbol

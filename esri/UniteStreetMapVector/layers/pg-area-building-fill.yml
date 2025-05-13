@@ -1,0 +1,14 @@
+id: pg-area-building-fill
+maxzoom: 20
+minzoom: 12
+paint:
+  fill-color: '#CBC5C5'
+  fill-opacity:
+    stops:
+      - - 12
+        - 0
+      - - 14
+        - 1
+source: v
+source-layer: building
+type: fill

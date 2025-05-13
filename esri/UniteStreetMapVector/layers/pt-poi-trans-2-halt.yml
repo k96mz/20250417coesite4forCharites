@@ -1,0 +1,21 @@
+filter:
+  - all
+  - - '=='
+    - fclass
+    - halt
+  - - '=='
+    - status
+    - true
+id: pt-poi-trans-2-halt
+layout:
+  icon-allow-overlap: false
+  icon-image: POI_Stop_R
+  icon-optional: false
+  icon-padding: 0
+  icon-size: 1
+minzoom: 15
+paint:
+  icon-color: '#802677'
+source: v
+source-layer: poi_trans
+type: symbol

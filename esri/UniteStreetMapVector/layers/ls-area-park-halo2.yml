@@ -1,0 +1,18 @@
+filter:
+  - all
+  - - '!='
+    - fclass
+    - maritime
+  - - '!='
+    - z_order
+    - 1
+id: ls-area-park-halo2
+layout:
+  line-join: round
+maxzoom: 20
+paint:
+  line-color: rgba(187,235,203,0.3)
+  line-width: 4
+source: v
+source-layer: area_park
+type: line

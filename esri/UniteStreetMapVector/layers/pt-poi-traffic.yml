@@ -1,0 +1,18 @@
+filter:
+  - all
+  - - '!='
+    - ungsc_mission
+    - UNMIK
+  - - '=='
+    - fclass
+    - fuel
+id: pt-poi-traffic
+layout:
+  icon-image: POI_Fuel
+  icon-size: 1
+minzoom: 14
+paint:
+  icon-color: '#CC3D61'
+source: v
+source-layer: poi_traffic
+type: symbol

@@ -1,0 +1,12 @@
+filter:
+  - any
+  - - '=='
+    - fclass
+    - cemetery
+id: pg-land-urban-cemetery
+maxzoom: 20
+paint:
+  fill-color: '#BDDFC9'
+source: v
+source-layer: lu_urban
+type: fill

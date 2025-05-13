@@ -1,0 +1,16 @@
+filter:
+  - all
+  - - '!='
+    - fclass
+    - wetland
+  - - '!='
+    - fclass
+    - glacier
+id: pg-hydro-water-main
+maxzoom: 20
+minzoom: 6
+paint:
+  fill-color: '#D8EBF5'
+source: v
+source-layer: watera
+type: fill

@@ -1,0 +1,21 @@
+filter:
+  - all
+  - - '=='
+    - fclass
+    - tram_stop
+  - - '=='
+    - status
+    - true
+id: pt-poi-trans-2-tram
+layout:
+  icon-allow-overlap: false
+  icon-image: POI_Stop_T
+  icon-optional: false
+  icon-padding: 0
+  icon-size: 1
+minzoom: 15
+paint:
+  icon-color: '#802677'
+source: v
+source-layer: poi_trans
+type: symbol

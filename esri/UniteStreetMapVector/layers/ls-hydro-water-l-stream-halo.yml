@@ -1,0 +1,19 @@
+filter:
+  - any
+  - - '=='
+    - z_order
+    - 2
+id: ls-hydro-water-l-stream-halo
+minzoom: 11
+paint:
+  line-color: rgba(250,249,246,0.5)
+  line-blur: 1
+  line-width:
+    stops:
+      - - 11.53
+        - 3
+      - - 18.17
+        - 6
+source: v
+source-layer: water
+type: line

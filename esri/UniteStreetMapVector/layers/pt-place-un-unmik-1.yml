@@ -1,0 +1,30 @@
+filter:
+  - all
+  - - '=='
+    - type
+    - City
+  - - '=='
+    - countrycode
+    - XKX
+id: pt-place-un-unmik-1
+layout:
+  icon-image: PPL_City
+  text-field: |-
+    {label_1}
+    {label_2}
+  text-font:
+    - NotoSansDisplay-Medium
+  text-offset:
+    - 0
+    - -0.3
+  text-size: 10.6667
+  text-anchor: bottom
+maxzoom: 9
+minzoom: 7
+paint:
+  text-color: '#343434'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333
+source: v
+source-layer: un_place
+type: symbol

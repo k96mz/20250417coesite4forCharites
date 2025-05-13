@@ -1,0 +1,20 @@
+id: pt-lab-admin3-mik
+layout:
+  text-field: '{region_name}'
+  text-font:
+    - NotoSans-Italic
+  text-size:
+    stops:
+      - - 12
+        - 10
+      - - 13
+        - 10.6
+maxzoom: 13
+minzoom: 8
+paint:
+  text-color: '#828282'
+  text-halo-color: '#FFFFFF'
+  text-halo-width: 1.333
+source: v
+source-layer: mik_bnd_lab3
+type: symbol

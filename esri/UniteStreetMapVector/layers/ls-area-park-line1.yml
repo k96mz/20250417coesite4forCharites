@@ -1,0 +1,19 @@
+filter:
+  - all
+  - - '!='
+    - fclass
+    - maritime
+  - - '=='
+    - z_order
+    - 1
+id: ls-area-park-line1
+layout:
+  line-cap: round
+  line-join: round
+maxzoom: 20
+paint:
+  line-color: '#8AB0A4'
+  line-width: 0.5
+source: v
+source-layer: area_park
+type: line

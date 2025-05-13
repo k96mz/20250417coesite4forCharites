@@ -1,0 +1,30 @@
+filter:
+  - any
+  - - '=='
+    - z_order
+    - 1
+id: ls-water-l-label
+layout:
+  symbol-placement: line
+  text-field: '{name}'
+  text-font:
+    - NotoSans-Regular
+  text-offset:
+    stops:
+      - - 15
+        - - 0
+          - -0.5
+      - - 16
+        - - 0
+          - -1
+      - - 17
+        - - 0
+          - 0
+  text-optional: true
+  text-size: 8
+minzoom: 9
+paint:
+  text-color: '#3D9CCC'
+source: v
+source-layer: water
+type: symbol

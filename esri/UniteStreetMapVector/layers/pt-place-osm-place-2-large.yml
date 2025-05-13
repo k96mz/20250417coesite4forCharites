@@ -1,0 +1,31 @@
+filter:
+  - all
+  - - in
+    - z_order
+    - 2
+  - - '!in'
+    - ungsc_mission
+    - UNMIK
+    - UNSMIL
+    - MINUSCA
+    - MONUSCO
+    - UNIFIL
+    - UNMISS
+    - UNAMID
+    - MINUJUSTH
+id: pt-place-osm-place-2-large
+layout:
+  text-field: '{name}'
+  text-font:
+    - NotoSansDisplay-Medium
+  text-size: 10.6667
+  text-anchor: center
+maxzoom: 15
+minzoom: 11
+paint:
+  text-color: '#343434'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333
+source: v
+source-layer: osm_place
+type: symbol

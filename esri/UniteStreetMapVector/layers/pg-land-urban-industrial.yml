@@ -1,0 +1,12 @@
+filter:
+  - any
+  - - '=='
+    - fclass
+    - industrial
+id: pg-land-urban-industrial
+maxzoom: 20
+paint:
+  fill-color: '#E1DEEC'
+source: v
+source-layer: lu_urban
+type: fill

@@ -1,0 +1,13 @@
+filter:
+  - any
+  - - '=='
+    - fclass
+    - wetland
+id: pg-hydro-water-wetland
+maxzoom: 20
+minzoom: 6
+paint:
+  fill-pattern: HYD_Wetland
+source: v
+source-layer: watera
+type: fill

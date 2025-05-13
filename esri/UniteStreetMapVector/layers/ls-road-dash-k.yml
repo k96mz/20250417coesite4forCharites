@@ -1,0 +1,36 @@
+filter:
+  - all
+  - - in
+    - z_order
+    - 14
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+  - - '!has'
+    - tunnel
+  - - '!has'
+    - bridge
+id: ls-road-dash-k
+layout:
+  line-join: round
+minzoom: 14
+paint:
+  line-color: '#E7E7E7'
+  line-width:
+    stops:
+      - - 13
+        - 0.66
+      - - 15
+        - 1.33
+      - - 17
+        - 4
+      - - 19
+        - 14
+  line-dasharray:
+    - 0.444444
+    - 0.444444
+source: v
+source-layer: road
+type: line

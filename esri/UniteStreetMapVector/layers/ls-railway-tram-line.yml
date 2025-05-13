@@ -1,0 +1,18 @@
+filter:
+  - all
+  - - in
+    - z_order
+    - 5
+    - 6
+id: ls-railway-tram-line
+paint:
+  line-color: '#80667D'
+  line-width:
+    stops:
+      - - 16
+        - 0.2
+      - - 19
+        - 0.5
+source: v
+source-layer: railway
+type: line

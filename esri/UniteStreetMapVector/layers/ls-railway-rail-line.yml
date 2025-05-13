@@ -1,0 +1,19 @@
+filter:
+  - all
+  - - in
+    - z_order
+    - 1
+id: ls-railway-rail-line
+paint:
+  line-color: '#80667D'
+  line-width:
+    stops:
+      - - 13
+        - 0.11
+      - - 16
+        - 0.44
+      - - 19
+        - 0.88
+source: v
+source-layer: railway
+type: line

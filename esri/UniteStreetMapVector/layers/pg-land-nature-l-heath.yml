@@ -1,0 +1,13 @@
+filter:
+  - any
+  - - in
+    - z_order
+    - 4
+    - 16
+id: pg-land-nature-l-heath
+maxzoom: 20
+paint:
+  fill-color: '#F2F2E3'
+source: v
+source-layer: nature-l
+type: fill

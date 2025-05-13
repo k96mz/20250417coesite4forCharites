@@ -1,0 +1,24 @@
+filter:
+  - all
+  - - in
+    - type
+    - Town
+  - - '!='
+    - countrycode
+    - XKX
+id: pt-place-un-global-2-large
+layout:
+  text-field: '{placename1}'
+  text-font:
+    - NotoSansDisplay-Medium
+  text-size: 10.6667
+  text-anchor: center
+maxzoom: 15
+minzoom: 11
+paint:
+  text-color: '#343434'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333
+source: v
+source-layer: un_place
+type: symbol

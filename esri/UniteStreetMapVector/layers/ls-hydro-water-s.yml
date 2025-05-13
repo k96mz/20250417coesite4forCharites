@@ -1,0 +1,19 @@
+id: ls-hydro-water-s
+layout:
+  line-cap: round
+  line-join: round
+maxzoom: 7
+minzoom: 3
+paint:
+  line-color: '#B5DEF2'
+  line-width:
+    stops:
+      - - 2.56
+        - 0.333333
+      - - 5.89
+        - 0.666667
+      - - 7.21
+        - 1
+source: v
+source-layer: un_water
+type: line

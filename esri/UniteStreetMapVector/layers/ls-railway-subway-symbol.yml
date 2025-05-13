@@ -1,0 +1,23 @@
+filter:
+  - all
+  - - in
+    - z_order
+    - 4
+id: ls-railway-subway-symbol
+layout:
+  symbol-placement: line
+  icon-image: TRA_Subway
+  icon-size:
+    stops:
+      - - 16
+        - 0.666667
+      - - 19
+        - 2
+  symbol-spacing: 2.66667
+  icon-rotation-alignment: map
+  icon-allow-overlap: true
+paint:
+  icon-color: '#80667D'
+source: v
+source-layer: railway
+type: symbol

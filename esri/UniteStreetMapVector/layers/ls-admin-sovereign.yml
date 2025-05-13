@@ -1,0 +1,17 @@
+filter:
+  - all
+  - - "=="
+    - bdytyp
+    - 9
+id: ls-admin-sovereign
+layout:
+  line-cap: round
+  line-join: round
+minzoom: 5.89
+paint:
+  # line-color: '#9C9C9C'
+  line-color: "#000000"
+  line-width: 1
+source: v
+source-layer: bndl
+type: line

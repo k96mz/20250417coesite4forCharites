@@ -1,0 +1,12 @@
+filter:
+  - any
+  - - '=='
+    - z_order
+    - 9
+id: pg-land-nature-l-quarry
+maxzoom: 20
+paint:
+  fill-color: '#ECE7DE'
+source: v
+source-layer: nature-l
+type: fill

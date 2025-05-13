@@ -1,0 +1,48 @@
+filter:
+  - all
+  - - '=='
+    - annotationclassid
+    - 8
+  - - '=='
+    - status
+    - 0
+id: pt-lab-cty-reg2
+layout:
+  text-allow-overlap: true
+  text-field: '{textstring}'
+  text-font:
+    - sans
+  text-optional: true
+  text-size:
+    stops:
+      - - 3
+        - 8
+      - - 4
+        - 12
+      - - 5
+        - 13
+maxzoom: 6
+minzoom: 5
+paint:
+  text-color:
+    stops:
+      - - 3
+        - '#6E7780'
+      - - 4
+        - '#636566'
+      - - 5
+        - '#575859'
+  text-halo-color: '#FFFFFF'
+  text-halo-width:
+    stops:
+      - - 2
+        - 0.7
+      - - 3
+        - 1
+      - - 4
+        - 1
+      - - 5
+        - 1
+source: v
+source-layer: lab_cty
+type: symbol

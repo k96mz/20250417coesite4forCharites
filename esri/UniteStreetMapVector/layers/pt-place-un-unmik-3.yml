@@ -1,0 +1,27 @@
+filter:
+  - all
+  - - in
+    - type
+    - Village
+  - - '=='
+    - countrycode
+    - XKX
+id: pt-place-un-unmik-3
+layout:
+  text-field: |-
+    {label_1}
+    {label_2}
+  text-font:
+    - NotoSansDisplay-Regular
+  text-size: 10
+  text-anchor: center
+  text-optional: true
+maxzoom: 16
+minzoom: 11
+paint:
+  text-color: '#4E4E4E'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333
+source: v
+source-layer: un_place
+type: symbol

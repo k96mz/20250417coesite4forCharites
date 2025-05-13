@@ -1,0 +1,25 @@
+filter:
+  - any
+  - - '=='
+    - fclass
+    - runway
+id: ls-structure-runway-dash
+layout:
+  line-join: round
+paint:
+  line-color: '#FFFFFF'
+  line-dasharray:
+    - 5
+    - 5
+  line-width:
+    stops:
+      - - 16
+        - 1.33333
+      - - 18
+        - 4.16667
+      - - 19
+        - 11.1111
+minzoom: 15.85
+source: v
+source-layer: runway
+type: line

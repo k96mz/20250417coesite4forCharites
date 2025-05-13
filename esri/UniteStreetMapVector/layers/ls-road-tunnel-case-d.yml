@@ -1,0 +1,39 @@
+filter:
+  - all
+  - - in
+    - z_order
+    - 7
+  - - has
+    - tunnel
+id: ls-road-tunnel-case-d
+layout:
+  line-cap: round
+  line-join: round
+minzoom: 9
+paint:
+  line-color:
+    stops:
+      - - 12
+        - rgba(255,255,255,0.75)
+      - - 13
+        - '#CC7A8F'
+  line-opacity: 0.5
+  line-width:
+    stops:
+      - - 8
+        - 0.9
+      - - 10
+        - 1.13
+      - - 12
+        - 1.5
+      - - 13
+        - 2.5
+      - - 15
+        - 5
+      - - 17
+        - 11
+      - - 19
+        - 24
+source: v
+source-layer: road
+type: line

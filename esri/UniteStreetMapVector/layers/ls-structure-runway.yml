@@ -1,0 +1,27 @@
+filter:
+  - any
+  - - '=='
+    - fclass
+    - runway
+id: ls-structure-runway
+layout:
+  line-cap: square
+  line-join: round
+paint:
+  line-color: '#80667D'
+  line-width:
+    stops:
+      - - 12
+        - 4
+      - - 14
+        - 10.6667
+      - - 16
+        - 29.3333
+      - - 18
+        - 91.6667
+      - - 19
+        - 244.444
+minzoom: 11
+source: v
+source-layer: runway
+type: line

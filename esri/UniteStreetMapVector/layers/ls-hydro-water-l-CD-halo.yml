@@ -1,0 +1,19 @@
+filter:
+  - any
+  - - in
+    - z_order
+    - 3
+    - 4
+id: ls-hydro-water-l-CD-halo
+minzoom: 13
+paint:
+  line-color: rgba(250,249,246,0.5)
+  line-width:
+    stops:
+      - - 11.53
+        - 1
+      - - 18.17
+        - 4
+source: v
+source-layer: water
+type: line

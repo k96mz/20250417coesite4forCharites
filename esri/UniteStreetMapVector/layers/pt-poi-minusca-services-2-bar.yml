@@ -1,0 +1,28 @@
+filter:
+  - all
+  - - '=='
+    - feat_class
+    - Club
+id: pt-poi-minusca-services-2-bar
+layout:
+  icon-image: POI_Bar
+  icon-size: 1
+  text-anchor: top
+  text-field: '{poiname}'
+  text-font:
+    - NotoSans-Regular
+  text-offset:
+    - 0
+    - 0.75
+  text-optional: true
+  text-padding: 1
+  text-size: 9.33333
+minzoom: 16
+paint:
+  icon-color: '#386090'
+  text-color: '#386090'
+  text-halo-color: '#FFFFFF'
+  text-halo-width: 1.33333
+source: v
+source-layer: poi_minusca
+type: symbol

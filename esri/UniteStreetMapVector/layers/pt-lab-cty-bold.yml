@@ -1,0 +1,54 @@
+filter:
+  - all
+  - - in
+    - annotationclassid
+    - 0
+    - 1
+    - 3
+  - - "=="
+    - status
+    - 0
+id: pt-lab-cty-bold
+layout:
+  text-allow-overlap: true
+  text-field: "{textstring}"
+  text-font:
+    - Open Sans Bold
+  text-optional: true
+  text-size:
+    stops:
+      - - 3
+        - 8
+      - - 4
+        - 12
+      - - 5
+        - 13
+maxzoom: 6
+minzoom: 1.56
+paint:
+  text-color:
+    stops:
+      - - 3
+        # - '#6E7780'
+        - "#06080A"
+      - - 4
+        # - "#636566"
+        - "#0B0E12"
+      - - 5
+        # - "#575859"
+        - "#0B0E12"
+  # text-halo-color: "#FFFFFF"
+  text-halo-color: rgba(92,111,128,0.7)
+  text-halo-width:
+    stops:
+      - - 2
+        - 0.7
+      - - 3
+        - 1
+      - - 4
+        - 1
+      - - 5
+        - 1
+source: v
+source-layer: lab_cty
+type: symbol

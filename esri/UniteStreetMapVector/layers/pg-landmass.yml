@@ -1,0 +1,9 @@
+id: pg-landmass
+maxzoom: 20
+minzoom: 0
+paint:
+  # fill-color: '#FAF9F6'
+  fill-color: "#354252"
+source: v
+source-layer: landmass
+type: fill

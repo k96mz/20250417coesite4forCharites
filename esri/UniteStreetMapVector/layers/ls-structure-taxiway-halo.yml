@@ -1,0 +1,22 @@
+filter:
+  - any
+  - - '=='
+    - fclass
+    - taxiway
+id: ls-structure-taxiway-halo
+layout:
+  line-join: round
+paint:
+  line-color: '#FFFFFF'
+  line-width:
+    stops:
+      - - 16
+        - 10.6667
+      - - 18
+        - 42.6667
+      - - 19
+        - 85.3333
+minzoom: 15.85
+source: v
+source-layer: runway
+type: line

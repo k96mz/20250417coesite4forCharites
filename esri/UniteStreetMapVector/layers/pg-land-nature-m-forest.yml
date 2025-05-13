@@ -1,0 +1,13 @@
+filter:
+  - any
+  - - in
+    - z_order
+    - 18
+    - 19
+id: pg-land-nature-m-forest
+maxzoom: 20
+paint:
+  fill-color: '#CFE6C3'
+source: v
+source-layer: nature-m
+type: fill

@@ -1,0 +1,12 @@
+filter:
+  - any
+  - - '=='
+    - z_order
+    - 15
+id: pg-land-nature-m-grass
+maxzoom: 20
+paint:
+  fill-color: '#E2EBCF'
+source: v
+source-layer: nature-m
+type: fill

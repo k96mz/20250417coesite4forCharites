@@ -1,0 +1,17 @@
+filter:
+  - all
+  - - in
+    - z_order
+    - 4
+id: ls-railway-subway-line
+paint:
+  line-color: rgba(242,230,241,0.3)
+  line-width:
+    stops:
+      - - 16
+        - 1.33333
+      - - 19
+        - 4
+source: v
+source-layer: railway
+type: line

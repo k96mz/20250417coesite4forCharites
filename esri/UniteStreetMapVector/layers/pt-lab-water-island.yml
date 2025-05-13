@@ -1,0 +1,27 @@
+filter:
+  - any
+  - - "=="
+    - annotationclassid
+    - 6
+id: pt-lab-water-island
+layout:
+  text-field: "{textstring}"
+  text-font:
+    - Open Sans Semibold Italic
+  text-size:
+    stops:
+      - - 3
+        - 8
+      - - 4
+        - 9.3
+maxzoom: 10
+minzoom: 4
+paint:
+  # text-color: "#717E85"
+  text-color: "#777D89"
+  # text-halo-color: '#FFFFFF'
+  text-halo-color: "#000000"
+  text-halo-width: 0.4
+source: v
+source-layer: lab_water
+type: symbol

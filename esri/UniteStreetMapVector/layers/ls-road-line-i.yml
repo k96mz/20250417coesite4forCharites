@@ -1,0 +1,42 @@
+filter:
+  - all
+  - - in
+    - z_order
+    - 15
+    - 16
+    - 17
+  - - '!has'
+    - tunnel
+  - - '!has'
+    - bridge
+id: ls-road-line-i
+layout:
+  line-cap: round
+  line-join: round
+minzoom: 12
+paint:
+  line-color:
+    stops:
+      - - 12
+        - '#B8B8B8'
+      - - 13
+        - '#FFFFFF'
+  line-width:
+    stops:
+      - - 8
+        - 0.4
+      - - 10
+        - 0.5
+      - - 12
+        - 0.66
+      - - 13
+        - 1
+      - - 15
+        - 2
+      - - 17
+        - 6
+      - - 19
+        - 18
+source: v
+source-layer: road
+type: line

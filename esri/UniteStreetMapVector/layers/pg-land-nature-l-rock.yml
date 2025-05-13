@@ -1,0 +1,12 @@
+filter:
+  - any
+  - - '=='
+    - z_order
+    - 2
+id: pg-land-nature-l-rock
+maxzoom: 20
+paint:
+  fill-color: '#E5DFD1'
+source: v
+source-layer: nature-l
+type: fill

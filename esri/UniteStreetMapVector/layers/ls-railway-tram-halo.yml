@@ -1,0 +1,18 @@
+filter:
+  - all
+  - - in
+    - z_order
+    - 5
+    - 6
+id: ls-railway-tram-halo
+paint:
+  line-color: rgba(242,230,241,0.5)
+  line-width:
+    stops:
+      - - 16
+        - 0.4
+      - - 19
+        - 1
+source: v
+source-layer: railway
+type: line

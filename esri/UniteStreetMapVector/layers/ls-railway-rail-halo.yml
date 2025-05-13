@@ -1,0 +1,19 @@
+filter:
+  - all
+  - - in
+    - z_order
+    - 1
+id: ls-railway-rail-halo
+paint:
+  line-color: rgba(242,230,241,0.6)
+  line-width:
+    stops:
+      - - 13
+        - 1
+      - - 16
+        - 2.66667
+      - - 19
+        - 5.33333
+source: v
+source-layer: railway
+type: line

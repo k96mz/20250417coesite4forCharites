@@ -1,0 +1,19 @@
+filter:
+  - all
+  - - '!in'
+    - countrycode
+    - LIB
+    - CAF
+  - - '=='
+    - type
+    - Fuel
+id: pt-poi-un-traffic
+layout:
+  icon-image: POI_Fuel
+  icon-size: 1
+minzoom: 14
+paint:
+  icon-color: '#CC3D61'
+source: v
+source-layer: un_poi
+type: symbol

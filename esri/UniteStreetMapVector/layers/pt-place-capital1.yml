@@ -1,0 +1,56 @@
+filter:
+  - all
+  - - "=="
+    - poptyp
+    - 1
+  - - "!in"
+    - cartolb
+    - Alofi
+    - Avarua
+    - Sri Jayewardenepura Kotte
+id: pt-place-capital1
+layout:
+  icon-allow-overlap: true
+  icon-image: PPL_National
+  icon-size:
+    stops:
+      - - 4
+        - 0.75
+      - - 6
+        - 1
+      - - 7
+        - 0
+  text-allow-overlap: true
+  text-field: "{cartolb}"
+  text-font:
+    - NotoSans-Regular
+  text-offset:
+    - -1
+    - -1
+  text-optional: true
+  text-size:
+    stops:
+      - - 4
+        - 9.33333
+      - - 5
+        - 10
+      - - 6
+        - 11.33333
+      - - 7
+        - 12
+maxzoom: 7
+minzoom: 4
+paint:
+  # text-color: '#3E3F40'
+  text-color: "#ededed"
+  # text-halo-color: rgba(255,255,255,0.75)
+  text-halo-color: rgba(255, 255, 255, 0.2)
+  text-halo-width:
+    stops:
+      - - 4
+        - 1
+      - - 5
+        - 1.33333
+source: v
+source-layer: un_popp
+type: symbol

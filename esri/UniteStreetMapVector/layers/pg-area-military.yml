@@ -1,0 +1,18 @@
+filter:
+  - all
+  - - '=='
+    - fclass
+    - military
+id: pg-area-military
+maxzoom: 20
+paint:
+  fill-opacity:
+    stops:
+      - - 10
+        - 0
+      - - 11
+        - 1
+  fill-pattern: ARE_Military
+source: v
+source-layer: lu_urban
+type: fill

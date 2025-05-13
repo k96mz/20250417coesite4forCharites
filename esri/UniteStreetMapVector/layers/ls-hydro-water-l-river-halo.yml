@@ -1,0 +1,21 @@
+filter:
+  - any
+  - - '=='
+    - z_order
+    - 1
+id: ls-hydro-water-l-river-halo
+minzoom: 10.53
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-color: '#B6DEF2'
+  line-width:
+    stops:
+      - - 11.53
+        - 2
+      - - 18.17
+        - 6.66667
+source: v
+source-layer: water
+type: line

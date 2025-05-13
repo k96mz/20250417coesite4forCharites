@@ -1,0 +1,13 @@
+filter:
+  - any
+  - - in
+    - z_order
+    - 13
+    - 14
+id: pg-land-nature-l-farm
+maxzoom: 18
+paint:
+  fill-color: '#F2F2DC'
+source: v
+source-layer: nature-l
+type: fill

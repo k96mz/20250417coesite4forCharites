@@ -1,0 +1,13 @@
+filter:
+  - any
+  - - in
+    - z_order
+    - 7
+    - 12
+id: pg-land-nature-l-orchard
+maxzoom: 20
+paint:
+  fill-color: '#E1EDC9'
+source: v
+source-layer: nature-l
+type: fill

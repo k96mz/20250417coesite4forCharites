@@ -1,0 +1,48 @@
+filter:
+  - all
+  - - in
+    - z_order
+    - 11
+    - 12
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+  - - '!has'
+    - tunnel
+  - - '!has'
+    - bridge
+id: ls-road-case-h
+layout:
+  line-cap: round
+  line-join: round
+minzoom: 10
+paint:
+  line-color:
+    stops:
+      - - 12
+        - rgba(255,255,255,0.75)
+      - - 13
+        - '#BAA6AB'
+  line-width:
+    stops:
+      - - 8
+        - 0.6
+      - - 10
+        - 0.75
+      - - 12
+        - 1
+      - - 13
+        - 1.75
+      - - 15
+        - 3.5
+      - - 17
+        - 8
+      - - 19
+        - 21
+source: v
+source-layer: road
+type: line

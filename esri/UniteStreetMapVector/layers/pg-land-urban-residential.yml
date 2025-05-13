@@ -1,0 +1,12 @@
+filter:
+  - any
+  - - '=='
+    - fclass
+    - residential
+id: pg-land-urban-residential
+maxzoom: 20
+paint:
+  fill-color: '#EDE6E6'
+source: v
+source-layer: lu_urban
+type: fill

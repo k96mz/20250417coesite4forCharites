@@ -1,0 +1,41 @@
+filter:
+  - all
+  - - in
+    - z_order
+    - 2
+    - 4
+  - - '!has'
+    - tunnel
+  - - '!has'
+    - bridge
+id: ls-road-line-f
+layout:
+  line-cap: round
+  line-join: round
+minzoom: 9
+paint:
+  line-color:
+    stops:
+      - - 12
+        - '#CC3D61'
+      - - 13
+        - '#D1899B'
+  line-width:
+    stops:
+      - - 8
+        - 0.4
+      - - 10
+        - 0.5
+      - - 12
+        - 0.66
+      - - 13
+        - 1
+      - - 15
+        - 2
+      - - 17
+        - 6
+      - - 19
+        - 18
+source: v
+source-layer: road
+type: line

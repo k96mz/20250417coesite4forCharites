@@ -1,0 +1,13 @@
+filter:
+  - any
+  - - '=='
+    - gridcode
+    - 30
+id: pg-landcover-30
+maxzoom: 20
+minzoom: 2
+paint:
+  fill-color: '#ECF3DD'
+source: v
+source-layer: landcover
+type: fill

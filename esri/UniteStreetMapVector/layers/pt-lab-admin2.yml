@@ -1,0 +1,17 @@
+id: pt-lab-admin2
+layout:
+  text-field: "{adm2nm}"
+  text-font:
+    - NotoSans-Italic
+  text-size: 10.6
+maxzoom: 13
+minzoom: 8
+paint:
+  # text-color: "#828282"
+  text-color: "#06080A"
+  # text-halo-color: '#FFFFFF'
+  text-halo-color: "rgba(92,111,128,0.7)"
+  text-halo-width: 1.333
+source: v
+source-layer: bnd_lab2
+type: symbol

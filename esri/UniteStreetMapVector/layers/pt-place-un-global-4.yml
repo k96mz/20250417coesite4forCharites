@@ -1,0 +1,25 @@
+filter:
+  - all
+  - - in
+    - type
+    - Suburb
+  - - '!='
+    - countrycode
+    - XKX
+id: pt-place-un-global-4
+layout:
+  text-field: '{placename1}'
+  text-font:
+    - NotoSansDisplay-Italic
+  text-size: 9.33333
+  text-anchor: center
+  text-optional: true
+maxzoom: 17
+minzoom: 12
+paint:
+  text-color: '#686868'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333
+source: v
+source-layer: un_place
+type: symbol

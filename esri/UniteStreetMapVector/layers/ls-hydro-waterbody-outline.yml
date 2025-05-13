@@ -1,0 +1,31 @@
+filter:
+  - all
+  - - '!='
+    - fclass
+    - wetland
+  - - '!='
+    - fclass
+    - glacier
+id: ls-hydro-waterbody-outline
+minzoom: 10.53
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-color:
+    stops:
+      - - 4
+        - '#609FBF'
+      - - 7
+        - '#3D9CCC'
+      - - 9
+        - '#B6DEF2'
+  line-width:
+    stops:
+      - - 11.53
+        - 0.666667
+      - - 18.17
+        - 3.33333
+source: v
+source-layer: watera
+type: line

@@ -1,0 +1,8 @@
+id: pg-hydro-water-small
+maxzoom: 6
+minzoom: 2
+paint:
+  fill-color: '#D8EBF5'
+source: v
+source-layer: watera-s
+type: fill

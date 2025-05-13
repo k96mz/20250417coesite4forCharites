@@ -1,0 +1,65 @@
+filter:
+  - all
+  - - "=="
+    - fclass
+    - aerodrome
+  - - has
+    - iata_code
+id: pt-poi-iata
+layout:
+  icon-allow-overlap: false
+  icon-image:
+    stops:
+      - - 9
+        - POI_Airport_S
+      - - 10
+        - POI_Airport
+  icon-optional: false
+  icon-padding: 0
+  icon-size:
+    stops:
+      - - 10
+        - 1
+      - - 11
+        - 1.2
+  text-anchor: bottom
+  text-field:
+    stops:
+      - - 9
+        - "{iata_code}"
+      - - 10
+        - "{name}"
+  text-font:
+    stops:
+      - - 9
+        - - NotoSans-Bold
+      - - 10
+        - - NotoSans-Regular
+  text-offset:
+    stops:
+      - - 9
+        - - 0
+          - -0.75
+      - - 11
+        - - 0
+          - -1.2
+  text-optional: true
+  text-padding: 0
+  text-size:
+    stops:
+      - - 9
+        - 9.33333
+      - - 10
+        - 11.33333
+minzoom: 7
+paint:
+  # icon-color: '#802677'
+  icon-color: "#DEDEDE"
+  # text-color: '#802677'
+  text-color: "#DEDEDE"
+  # text-halo-color: "#FFFFFF"
+  text-halo-color: rgba(255,255,255,0.1)
+  text-halo-width: 1.33333
+source: v
+source-layer: poi_trans
+type: symbol

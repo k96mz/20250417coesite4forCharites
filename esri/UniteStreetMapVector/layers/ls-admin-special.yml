@@ -1,0 +1,50 @@
+filter:
+  - all
+  - - "=="
+    - bdytyp
+    - 2
+id: ls-admin-special
+layout:
+  line-join: round
+paint:
+  line-color:
+    stops:
+      - - 3
+        # - '#737B80'
+        - "#151A21"
+      - - 4
+        # - "#454A4C"
+        - "#151A21"
+      - - 5
+        # - "#454A4C"
+        - "#000000"
+      - - 6
+        # - "#393D40"
+        - "#000000"
+  line-dasharray:
+    stops:
+      - - 3
+        - - 2
+          - 2
+      - - 4
+        - - 4
+          - 2
+  line-width:
+    stops:
+      - - 0
+        - 0.1
+      - - 1
+        - 0.133333
+      - - 2
+        - 0.333333
+      - - 3
+        - 0.5
+      - - 4
+        - 0.666667
+      - - 5
+        - 1
+      - - 6
+        - 1.333
+source: v
+source-layer: bndl
+type: line

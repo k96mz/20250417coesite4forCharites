@@ -1,0 +1,16 @@
+id: pg-area-building-shadow
+maxzoom: 20
+minzoom: 14
+paint:
+  fill-color: rgba(120,117,117,0.5)
+  fill-translate:
+    stops:
+      - - 13
+        - - 0
+          - 0
+      - - 17
+        - - 3
+          - 3
+source: v
+source-layer: building
+type: fill

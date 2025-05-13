@@ -1,0 +1,28 @@
+id: ls-road-symbol-minor
+filter:
+  - all
+  - - in
+    - z_order
+    - 9
+    - 11
+    - 13
+    - 15
+    - 12
+    - 16
+    - 17
+layout:
+  symbol-placement: line
+  symbol-spacing: 1000
+  text-field: '{name}'
+  text-font:
+    - sans
+  text-optional: true
+  text-size: 9.33333
+minzoom: 15
+paint:
+  text-color: '#828282'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333
+source: v
+source-layer: road
+type: symbol

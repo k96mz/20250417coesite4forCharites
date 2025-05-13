@@ -1,0 +1,41 @@
+filter:
+  - all
+  - - in
+    - z_order
+    - 9
+    - 10
+  - - has
+    - bridge
+id: ls-road-bridge-line-e
+layout:
+  line-cap: round
+  line-join: round
+minzoom: 8
+paint:
+  line-color:
+    stops:
+      - - 12
+        - '#BAA6AB'
+      - - 13
+        - '#DDD1D4'
+  line-width:
+    stops:
+      - - 6
+        - 0.45
+      - - 8
+        - 0.6
+      - - 10
+        - 0.75
+      - - 12
+        - 1
+      - - 13
+        - 1.5
+      - - 15
+        - 3
+      - - 17
+        - 8
+      - - 19
+        - 20
+source: v
+source-layer: road
+type: line

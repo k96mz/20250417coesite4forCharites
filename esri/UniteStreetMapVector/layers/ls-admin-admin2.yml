@@ -1,0 +1,17 @@
+filter:
+  - all
+  - - "=="
+    - bdytyp
+    - 7
+id: ls-admin-admin2
+minzoom: 7.21
+paint:
+  # line-color: '#CCCCCC'
+  line-color: "#000000"
+  line-dasharray:
+    - 4
+    - 6
+  line-width: 0.666667
+source: v
+source-layer: bndl
+type: line

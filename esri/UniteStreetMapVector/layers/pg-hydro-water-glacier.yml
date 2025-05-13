@@ -1,0 +1,13 @@
+filter:
+  - any
+  - - '=='
+    - fclass
+    - glacier
+id: pg-hydro-water-glacier
+maxzoom: 20
+minzoom: 6
+paint:
+  fill-color: '#FBFCFB'
+source: v
+source-layer: watera
+type: fill

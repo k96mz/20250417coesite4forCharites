@@ -1,0 +1,12 @@
+filter:
+  - all
+  - - '!='
+    - fclass
+    - pier
+id: pg-land-trans-area
+maxzoom: 20
+paint:
+  fill-color: '#E9DCE7'
+source: v
+source-layer: trans_area
+type: fill

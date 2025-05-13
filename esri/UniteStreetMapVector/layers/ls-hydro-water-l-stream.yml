@@ -1,0 +1,18 @@
+filter:
+  - any
+  - - '=='
+    - z_order
+    - 2
+id: ls-hydro-water-l-stream
+minzoom: 11
+paint:
+  line-color: '#C7E4F2'
+  line-width:
+    stops:
+      - - 11.53
+        - 0.88
+      - - 18.17
+        - 3.52
+source: v
+source-layer: water
+type: line
