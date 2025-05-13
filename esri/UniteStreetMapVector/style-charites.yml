@@ -1,6 +1,6 @@
 version: 8
 # sprite: http://127.0.0.1:3000/unvt/sprite-rev/sprite_S
-sprite: http://127.0.0.1:3000/unvt/sprite-dark/sprite
+sprite: http://127.0.0.1:3000/unvt/sprite-dark/sprite_S
 glyphs: http://127.0.0.1:3000/unvt/font/{fontstack}/{range}.pbf
 sources:
   v:
